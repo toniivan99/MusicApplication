@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.musicapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MusicApplication"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.EditSongActivity"></activity>
+        <activity android:name=".activities.EditArtistActivity" />
+        <activity android:name=".activities.DeezerArtistActivity" />
+        <activity android:name=".activities.DeleteSongActivity" />
+        <activity android:name=".activities.DeleteArtistActivity" />
+        <activity android:name=".activities.ShowSongsActivity" />
+        <activity android:name=".activities.ShowArtistsActivity" />
+        <activity android:name=".activities.AddSongActivity" />
+        <activity android:name=".activities.AddArtistActivity" />
+        <activity android:name=".activities.BaseActivity" />
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
